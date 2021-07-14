@@ -1,0 +1,98 @@
+/*start header*/
+header
+{   overflow: hidden;
+    text-transform: uppercase;
+    padding: 40px 0;
+    border-bottom:1px solid #e2e2e2;
+    position: relative;
+    .logo
+    {   
+        width:42%;
+        float:left;
+        color:#666666;
+        i
+        {
+            color:$mainColor;
+            margin-left: 13px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+        @media #{ $mobileScreen} {
+            width: 50%;
+            float:none;
+            text-align: center;
+        }
+        @media #{$smallScreen} {
+            width: 100%;
+            float:left;
+            text-align: center;
+        }
+        @media #{$mediumScreen} {
+            width:22%;
+            float:left;
+            text-align: left;
+        }
+        h2
+        {
+            margin: 0;
+            font-size: 32px;
+            font-family: initial;
+            @media #{ $mobileScreen} {
+                font-size: 26px;
+            }
+        }
+        p{
+            font-size: 13px;
+            margin: 5px 29px 0;
+            font-family: initial;
+            @media #{ $mobileScreen} {
+                font-size: 10px;
+            }
+        }
+    }
+    .link
+    {   width:58%;
+        float:left;
+        padding: 20px 0;
+        border-radius: 10px;
+        background-color: $mainColor;
+        @media #{$mobileScreen} {
+            width: 100%;
+            margin-top: 15px;
+            float: none;
+            text-align: center;
+            display: none;
+            border-radius: 0;
+        }
+        @media #{$smallScreen} {
+            width: 100%;
+            margin-top: 15px;
+            display: block!important;
+        }
+        @media #{$mediumScreen} {
+            width:78%;
+            float:left;
+            margin-top: 0;
+        }
+        li
+        {   display: inline-block;
+            margin-left: 39px;
+            @media #{$mobileScreen} {
+                display: block;
+                margin-left:0;
+                font-size: 21px;
+                margin-top: 20px;
+            }
+            a
+            {
+                @include prefixer(transition, all .5s ease-in-out , webkit moz o);
+                &:hover
+                {
+                    color:#ee9395
+                } 
+            }
+            
+        }
+    }
+}
+/*end header */

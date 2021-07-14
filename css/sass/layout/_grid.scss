@@ -1,0 +1,32 @@
+*
+{
+    @include prefixer(box-sizing ,  border-box , webkit moz o );
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contaneir
+{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    
+    @media #{$smallScreen}
+    {
+        width:750px;
+    };
+     
+    @media #{$mediumScreen}
+    {
+        width:970px;
+    };
+     
+    @media #{$largeScreen}
+    {
+        width:1170px;
+    };
+}

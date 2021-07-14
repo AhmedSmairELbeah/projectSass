@@ -1,0 +1,163 @@
+//file var
+@import "sass/helpers/variables";
+//file button
+@import "sass/components/button";
+$floatRight:right;
+$text-align:right;
+body
+{
+    font-family: 'Tajawal', sans-serif;
+    font-family: 'Cairo', sans-serif;
+}
+/*start header*/
+header
+{   
+    .logo
+    {   
+        h2
+        {
+            font-size: 52px;
+        }
+
+        @media #{$smallScreen} {
+            float:$floatRight;
+        }
+        @media #{$mediumScreen} {
+            float:$floatRight;
+            text-align: $text-align;
+        }
+       
+        }
+    .link
+    { 
+        float:$floatRight;
+        @media #{$mediumScreen} {
+            float:$floatRight;
+            text-align: center;
+        }
+    }
+}
+/*end header */
+/* start slider*/
+.slider
+{
+    text-align: center;
+    q
+    {
+        font-style: normal;
+    }
+}
+/* End slider*/
+/*Start services*/
+.services
+{ 
+    .box
+    {
+        float: $floatRight;
+
+        @media #{$smallScreen}
+        {
+            float: $floatRight;
+         
+        }
+        @media #{$mediumScreen}
+        {
+            float: $floatRight;
+            text-align: center;
+        }
+        i
+        {
+            margin-left: 30px;
+            @media #{$smallScreen}
+            {
+                margin-left: 10px;
+            };
+            @media #{$mediumScreen}
+            {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+/*End services*/
+/*start our players*/
+.players
+{
+
+    .person
+    {
+        float:$floatRight;
+        @media #{$smallScreen} {
+            float:$floatRight;
+        }
+        @media #{$mediumScreen} {
+            float:$floatRight;
+        }
+    }
+    p:last-of-type
+    {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+}
+
+/*end our players*/
+/*Start latest work*/
+.work
+{ 
+    .img-box
+    {
+        float:$floatRight;
+        margin-top: 40px;
+    }
+}
+/*End latest work*/
+/*Start form*/
+.form-my
+{   
+    .form-box
+    {
+        float: $floatRight;
+        margin-left: 2%;
+        @media #{$mediumScreen} {
+            float: $floatRight;
+            margin-left: 2%;
+            text-align: $text-align;
+        }
+        .img-from
+        {
+            float: $floatRight;
+            margin-left: 20px;
+            margin-right: 0;
+            @media #{$mediumScreen} {
+                float: $floatRight;
+            }
+        }
+        .text
+        {
+            float: $floatRight;
+            @media #{$mediumScreen} {
+                float: $floatRight;
+            }
+           
+        }
+    }
+}
+/*End form*/
+/*footer*/
+footer
+{
+    .box-footer
+    {
+        float: $floatRight;
+    }
+    .box-footer:nth-of-type(2)
+    {
+        text-align: left!important;
+    }
+}
+.toggleButton
+{
+    right: auto;
+    left: 15px;
+}
